@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    width: 80%;
+    margin: 20px auto;
+    /* border: 1px solid red; */
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px;
+    text-shadow: 0px 0px 3px grey;
+}
+
+
+/****** USER CHOICES CONTAINER */
+
+#user-container {
+    /* border: 1px solid blue; */
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+label {
+    text-decoration: underline;
+}
+
+label, input {
+    margin: 10px;
+}
+
+
+/******* RESULTS CONTAINER */
+
+#result-container {
+    border: 1px solid black;
+    box-shadow: 0px 0px 3px black;
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 50vh;
+}

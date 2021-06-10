@@ -9,15 +9,31 @@
 </head>
 <body>
     <div id="main">
+        <h1>Color Picker</h1>
+
+        <!-- Container with user's actions -->
         <div id="user-container">
-            <label for="text-color">Text</label>
-            <input type="color" id="text-color" />
-            <label for="bg-color">Background</label>
-            <input type="color" id="bg-color" />
+
+            <!-- Text color choice -->
+            <div class="user-picker">
+                <label for="text-color">Text :</label>
+                <input type="color" id="text-color" />
+            </div>
+            
+            <!-- Background color choice -->
+            <div class="user-picker">
+                <label for="bg-color">Background :</label>
+                <input type="color" id="bg-color" />
+            </div>
+
         </div>
+
+        <!-- Container with text and background results -->
         <div id="result-container">
             <p id="result-text">Text</p>
         </div>
+
+        <!-- TO DO - Colors copy buttons -->
     </div>
     <script src="script.js"></script>
 </body>
