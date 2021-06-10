@@ -32,6 +32,11 @@ textColor.addEventListener('change', () => {
 copyTextColor.addEventListener('click', () => {
     textColorCode.select();
     document.execCommand('copy');
+    document.querySelector('.text-color-copied').style.display = "block";
+    document.querySelector('.text-color-copied').style.animation = "copied-animation-forwards 4s";
+    setInterval(function() {
+        document.querySelector('.text-color-copied').style.animation = "";}, 6000
+    );
 });
 
 
@@ -47,4 +52,9 @@ bgColor.addEventListener('change', () => {
 copyBGColor.addEventListener('click', () => {
     bgColorCode.select();
     document.execCommand('copy');
+    document.querySelector('.bg-color-copied').style.display = "block";
+    document.querySelector('.bg-color-copied').style.animation = "copied-animation-forwards 4s";
+    setInterval(function() {
+        document.querySelector('.text-color-copied').style.animation = "";}, 6000
+    );
 });
