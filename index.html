@@ -18,12 +18,14 @@
             <div class="user-picker">
                 <label for="text-color">Text :</label>
                 <input type="color" id="text-color" />
+                <input type="text" id="text-color-code" hidden />
             </div>
             
             <!-- Background color choice -->
             <div class="user-picker">
                 <label for="bg-color">Background :</label>
                 <input type="color" id="bg-color" />
+                <input type="text" id="bg-color-code" hidden />
             </div>
 
         </div>
@@ -34,6 +36,10 @@
         </div>
 
         <!-- TO DO - Colors copy buttons -->
+        <div id="copy-container">
+            <button id="copy-text-color">Copy Text Color</button>
+            <button id="copy-bg-color">Copy BG Color</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
